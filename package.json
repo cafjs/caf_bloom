@@ -1,0 +1,28 @@
+{
+    "name": "caf_bloom",
+    "description": "Cloud Assistant library to provide Bloom filters backed by Redis",
+    "version": "0.2.0",
+    "author": "Antonio Lain <antlai@cafjs.com>",
+    "dependencies": {
+        "caf_core": "^0.2.0",
+        "fnv-plus" :"^1.2.12"
+    },
+    "devDependencies": {
+        "eslint": "^3.1.1",
+        "nodeunit" : ">=0.9",
+        "jsdoc": "^3.4.2"
+    },
+    "main": "index",
+    "homepage": "http://www.cafjs.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cafjs/caf_bloom.git"
+    },
+    "scripts": {
+        "test": "node ./node_modules/.bin/nodeunit",
+        "eslint" : "./node_modules/.bin/eslint .",
+        "eslintfix" : "./node_modules/.bin/eslint --fix .",
+        "docs" : "rm -fr docs; mkdir -p docs; ./node_modules/.bin/jsdoc --pedantic -c ./conf.json -d docs lib/*.js --readme ./README.md --package ./package.json"
+    },
+    "engines": { "node": ">= 0.10.1 " }
+}
