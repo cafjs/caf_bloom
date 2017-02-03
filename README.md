@@ -33,6 +33,8 @@ See {@link module:caf_bloom/plug_bloom}
 
 ### ca.json
 
+See {@link module:caf_bloom/plug_ca_bloom} and  {@link module:caf_bloom/proxy_bloom}
+
        {
            "module": "caf_bloom#plug_ca",
            "name": "bloom",
