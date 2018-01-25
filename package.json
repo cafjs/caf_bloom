@@ -1,10 +1,10 @@
 {
     "name": "caf_bloom",
     "description": "Cloud Assistant library to provide Bloom filters backed by Redis",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "author": "Antonio Lain <antlai@cafjs.com>",
     "dependencies": {
-        "caf_core": "^0.2.0",
+        "caf_core": "^0.3.0",
         "fnv-plus" :"^1.2.12"
     },
     "devDependencies": {
