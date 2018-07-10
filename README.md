@@ -5,7 +5,8 @@ Co-design permanent, active, stateful, reliable cloud proxies with your web app 
 See http://www.cafjs.com
 
 ## CAF Bloom
-[![Build Status](http://ci.cafjs.com/api/badges/cafjs/caf_bloom/status.svg)](http://ci.cafjs.com/cafjs/caf_bloom)
+[![Build Status](https://travis-ci.org/cafjs/caf_bloom.svg?branch=master)](https://travis-ci.org/cafjs/caf_bloom)
+
 
 This library creates a Bloom filter backed by Redis.
 
