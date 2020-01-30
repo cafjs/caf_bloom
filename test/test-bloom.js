@@ -1,15 +1,15 @@
 "use strict"
 
-var hello = require('./hello/main.js');
-var app = hello;
-var caf_core = require('caf_core');
-var myUtils = caf_core.caf_components.myUtils;
-var async = caf_core.async;
-var cli = caf_core.caf_cli;
+const hello = require('./hello/main.js');
+const app = hello;
+const caf_core = require('caf_core');
+const myUtils = caf_core.caf_components.myUtils;
+const async = caf_core.async;
+const cli = caf_core.caf_cli;
 
-var CA_OWNER_1 = 'bloomother1';
-var CA_LOCAL_NAME_1 = 'bar1';
-var FROM_1 =  CA_OWNER_1 + '-' + CA_LOCAL_NAME_1;
+const CA_OWNER_1 = 'bloomother1';
+const CA_LOCAL_NAME_1 = 'bar1';
+const FROM_1 =  CA_OWNER_1 + '-' + CA_LOCAL_NAME_1;
 
 process.on('uncaughtException', function (err) {
                console.log("Uncaught Exception: " + err);
@@ -20,7 +20,7 @@ process.on('uncaughtException', function (err) {
 
 module.exports = {
     setUp: function (cb) {
-       var self = this;
+       const self = this;
         app.init( {name: 'top'}, 'framework.json', null,
                       function(err, $) {
                           if (err) {
@@ -35,7 +35,7 @@ module.exports = {
                       });
     },
     tearDown: function (cb) {
-        var self = this;
+        const self = this;
         if (!this.$) {
             cb(null);
         } else {
@@ -59,7 +59,7 @@ module.exports = {
                 };
             },
             function(cb) {
-                var cb1 = function(err, reply) {
+                const cb1 = function(err, reply) {
                     test.ifError(err);
                     test.ok(reply === true);
                     cb(null);
@@ -67,7 +67,7 @@ module.exports = {
                 s1.has('mykey-x1',  cb1);
             },
             function(cb) {
-                var cb1 = function(err, reply) {
+                const cb1 = function(err, reply) {
                     test.ifError(err);
                     test.ok(reply === false);
                     cb(null);
