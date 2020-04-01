@@ -1,10 +1,10 @@
-# CAF.js (Cloud Assistant Framework)
+# Caf.js
 
 Co-design permanent, active, stateful, reliable cloud proxies with your web app or gadget.
 
-See http://www.cafjs.com
+See https://www.cafjs.com
 
-## CAF Bloom
+## Library for Bloom Filters
 [![Build Status](https://travis-ci.org/cafjs/caf_bloom.svg?branch=master)](https://travis-ci.org/cafjs/caf_bloom)
 
 
